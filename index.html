@@ -1,1 +1,297 @@
-hello world
+<!DOCTYPE html>
+<html>
+<head>
+<title>my portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel = "stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+<body>
+    <div class= "container">
+        <div  class="navigation">
+<ul>
+    <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+    <li><a href="#about" onclick="toggleMenu();">About</a></li>
+    <li><a href="#awards" onclick="toggleMenu();">Awards</a></li>
+    <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+    <li><a href="#testimonials" onclick="toggleMenu();">Certificates</a></li>
+    <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+</ul>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <a href="#" class = "logo">Portfolio</a>
+                <div class = "toggle"> 
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                
+            </div>
+
+            <!-- banner -->
+            <section class="banner" id ="banner">
+                <div class = "content">
+                    <div class="imgBx">
+                        <img src="my personal image.jpg">
+                    </div>
+                    <h3>Hamzeh Alzwairy</h3>
+                    <p>Developer and current CSE Master student at MSU, current <b style="color: black;">GPA 3.5</b></p>
+                    <a href="resume.pdf" download="Alzweri Hamzeh Resume.pdf" class ="btn">My CV</a>
+                    <ul class="socialMedia">
+                        <li><a href="https://www.facebook.com/hamza.zwiry/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/hamza-zwairy-2328bb182/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+                    </ul>
+                </div>
+            </section>
+
+             <!-- about -->
+             <section class="about adjust" id ="about">
+                 <div class ="title">
+                     <h2>About Me</h2>
+                 </div>
+                 <div class ="content">
+                     <div class="textBox">
+                         <p> Former Backend developer at Australian Post Global (download CV above for more details). Currently pursuing a master's degree of Computer Science and Engineering at Michigan State University, I am focusing my credits on Artificial Intelligence topics especially Computer Vision & Deep Learning related topics.  <br><br> My favorite  activity is coding, I can code in Python and C# but I am able to learn other languages on-demand for my different projects, my experience in Python is more research related. I am interested in Computer Vision, Machine Learning and Deep Learning. If you want me to work on a project or a research then you can email me <a href="#contact">here</a>.<br><br> I am aiming to also pursue a PhD Inshallah as I love teaching, I didn't start my master's degree immediately after graduation because I wanted to gain hands on experience in coding as I am trying to balance between my research skills and development skills. Whenever I am not busy with my course or research duties, I am usually playing video games, learning something new, trying out new restaurants or walking outdoors. My favorite  pets are cats, I don't know why I am saying this here but now you know.</p>
+                     </div>
+                     <div class="imgBx">
+                         <img src="me_nyc.JPG">
+                     </div>
+                 </div>
+             </section>
+
+             <!-- awards -->
+             <section class="awards adjust" id ="awards">
+                <div class ="title">
+                    <h2>Awards</h2>
+                    <p>These are the noteworthy awards that I received so far</p>
+                </div>
+                <div class="content">
+                    <a href="https://www.fulbright-jordan.org/jordanian-programs/jordanian-student-scholarship">
+                    <div class="awardsBox">
+                        
+                        <img src="fulbright.jpg">
+                        <h2>Fulbright Foreign Student Program Grantee, 2020-2021 Cycle</h2>
+                        <p>The Fulbright Student scholarships are offered every year to qualified Jordanian students for higher study and research in the United States of America. This award is highly competitive and only few students are accepted every year.</p>
+                    
+                    </div>
+                </a>
+                </div>
+            </section>
+
+             <!-- projects -->
+             <section class="projects adjust" id ="projects">
+                <div class ="title">
+                    <h2>Recent Work</h2>
+                    <p>The following are the projects that I recently worked on, I also worked on many other projects during my time as a developer but I can't claim ownership for those projects.</p>
+                </div>
+                <div class ="content">
+                    <div class ="workBx">
+                        <div class="imgBx">
+                            <img src="3DBinPacking/3d bin packing logo.jpg">
+                        </div>
+                        <div class = "textBx">
+                            <h3>3D Bin Packing with NSGA-II and a heuristic decoder</h3>
+                            <div class="buttonsContainer">
+                            <a href="3DBinPacking/3D  bin packing problem using NSGA-II and Heuristic Decoder.pdf" class="btn">Project Report</a>
+                            <a href="https://github.com/HamzehAlzwairy/3D-bin-packing-using-NSGA-II-and-heuristic-decoder" class="btn">Github Repository</a>
+                        </div>
+                        </div>
+                    </div>
+                
+                    <div class ="workBx">
+                        <div class="imgBx">
+                            <img src="Network Trace Application Predictor/project banner.jpg">
+                        </div>
+                        <div class = "textBx">
+                            <h3>Network Trace Application Predictor</h3>
+                            <div class="buttonsContainer">
+                                <a href="Network Trace Application Predictor/Paper Report - CSE 824.pdf" class="btn">Project Report</a>
+                                <a href="https://github.com/ChrisNosowsky/network-trace-application-predictor" class="btn">Github Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+             <!-- testimonials -->
+             <section class="testimonials adjust" id ="testimonials">
+                <div class ="title">
+                    <h2>Certificates</h2>
+                    <p>The following are the certificates I earned so far</p>
+                </div>
+                <div class="content">
+                    <!--certificate card-->
+                    <div class="testimonialsBox google">
+                        <a href="https://www.pluralsight.com/courses/how-google-does-machine-learning-1?exp=3">
+                        <div class="imgBx">
+                            <img src="Google-cloud-logo.jpg">
+                        </div>
+                        <p>Google thinks about machine learning slightly differently -- of being about logic, rather than just data. We talk about why such a framing is useful when thinking about building a pipeline of machine learning models. Then, we discuss the five phases of converting a candidate use case to be driven by machine learning, and consider why it is important the phases not be skipped. We end with a recognition of the biases that machine learning can amplify and how to recognize this.</p>
+                        <div class="certificateButtonContainer">
+                            <a href="certificates/google-ml-cert.pdf" class="courserabtn">Certificate</a>
+                            <h4>How Google does Machine Learning<br><span>Google Cloud</span></h4>
+                        </div>
+                    </a>
+                </div>
+
+                    <!--certificate card-->
+                    <div class="testimonialsBox google">
+                        <a href="https://www.pluralsight.com/courses/launching-machine-learning-update-1?exp=3">
+                        <div class="imgBx">
+                            <img src="Google-cloud-logo.jpg">
+                        </div>
+                        <p>Starting from a history of machine learning, we discuss why neural networks today perform so well in a variety of problems. We then discuss how to set up a supervised learning problem and find a good solution using gradient descent. This involves creating datasets that permit generalization; we talk about methods of doing so in a repeatable way so as to support experimentation.</p>
+                        <div class="certificateButtonContainer">
+                            <a href="certificates/ML-course-1.pdf" class="courserabtn">Certificate</a>
+                            <h4>Launching into Machine Learning<br><span>Google Cloud</span></h4>
+                        </div>
+                    </a>
+                </div>
+                    <!--certificate card-->
+                    <div class="testimonialsBox red">
+                        <a href="https://www.coursera.org/learn/ai-for-medical-diagnosis">
+                        <div class="imgBx">
+                            <img src="deeplearningai logo.jpg">
+                        </div>
+                        <p>The essence of this course is applying cutting-edge machine learning techniques to concrete problems in modern medicine, it includes disease detection with Computer Vision, evaluating medical models and segmenting brain MRIs.</p>
+                        <div class="certificateButtonContainer">
+                            <a href="certificates/Coursera 73KDZJ77DDXZ.pdf" class="courserabtn">Certificate</a>
+                            <h4>AI for Medical Diagnosis<br><span>Coursera</span></h4>
+                        </div>
+                    </a>
+                    </div>
+                    <!--certificate card-->
+                    <div class="testimonialsBox red">
+                        <a href="https://www.coursera.org/learn/ai-for-medical-prognosis">
+                        <div class="imgBx">
+                            <img src="deeplearningai logo.jpg">
+                        </div>
+                        <p>Machine learning is a powerful tool for prognosis, a branch of medicine that specializes in predicting the future health of patients. We went through multiple examples of prognostic tasks,  used decision trees to model non-linear relationships, which are commonly observed in medical data, and apply them to predicting mortality rates more accurately. Finally, we learned how to handle missing data, a key real-world challenge. </p>
+                        <div class="certificateButtonContainer">
+                            <a href="certificates/Coursera 5R4F6EUC8962.pdf" class="courserabtn">Certificate</a>
+                            <h4>AI for Medical Prognosis<br><span>Coursera</span></h4>
+                        </div>
+                    </a>
+                </div>
+                    <!--certificate card-->
+                    <div class="testimonialsBox pink">
+                        <a href="https://www.pluralsight.com/courses/csharp-fundamentals-dev?exp=3">
+                        <div class="imgBx">
+                            <img src="pluralsight.png">
+                        </div>
+                        <p>This course gives you everything you need to become a productive C# developer on any platform. Learn the basics of reading and writing C# code in your own applications. It essentially contains all main topics in C#, leaving the student in a point where he/she can start developing and reading documentation on their own. </p>
+                        <div class="certificateButtonContainer">
+                            <a href="certificates/C-funds.pdf" class="courserabtn">Certificate</a>
+                            <h4>C# fundamentals<br><span>Scott Allen, PLURALSIGHT</span></h4>
+                        </div>
+                    </a>
+                </div>
+                    <!--certificate card-->
+                    <div class="testimonialsBox pink">
+                        <a href="https://www.pluralsight.com/courses/dotnet-dates-times?exp=3">
+                        <div class="imgBx">
+                            <img src="pluralsight.png">
+                        </div>
+                        <p>In this course, Dates and Times in .NET, you will master the art of parsing dates and times and how to handle ambiguity using common standards that usually get overlooked and cause unexpected errors.</p>
+                        <div class="certificateButtonContainer">
+                            <a href="certificates/dates-.net.pdf" class="courserabtn">Certificate</a>
+                            <h4>Dates and Times in .NET<br><span>Filip Ekberg, PLURALSIGHT</span></h4>
+                        </div>
+                    </a>
+                </div>
+
+                    <!--certificate card-->
+                    <div class="testimonialsBox pink">
+                        <a href="https://www.pluralsight.com/search?q=microsoft+azure+developer%3A+ensuring+configurability&exp=3">
+                        <div class="imgBx">
+                            <img src="pluralsight.png">
+                        </div>
+                        <p>In this course you will learn how to build and deploy configurable .NET Core applications on Microsoft Azure. First, you’ll learn about the .NET Core configuration API and its capabilities. Next, you’ll explore ASP.NET Core application configurability. Finally, you’ll discover how to refactor an existing application by replacing hard-coded values with configuration settings.</p>
+                        <div class="certificateButtonContainer">
+                            <a href="certificates/azure-config.pdf" class="courserabtn">Certificate</a>
+                            <h4>Microsoft Azure Developer: Ensuring Configurability<br><span>Matt Honeycutt, PLURALSIGHT</span></h4>
+                        </div>
+                    </a>
+                </div>
+                    <!--certificate card-->
+                    <div class="testimonialsBox pink">
+                        <a href="https://www.pluralsight.com/courses/designing-restful-web-apis">
+                        <div class="imgBx">
+                            <img src="pluralsight.png">
+                        </div>
+                        <p>Too many APIs are just built on an as-needed basis. In this course, Designing RESTful Web APIs, you will design your API to meet your needs before you embark on implementing the service. First, you will explore the design philosophies of creating an API on top of REST without the dogma. Next, you will discover how to design APIs to take URIs, verbs, message bodies, versioning and security into account. Finally, you will examine how creating an API can stand up to the test of time instead of extending your proof of concept into a supported API you can't get rid of. By the end of this course, you will have complete understanding and knowledge to produce useful APIs for your project.</p>
+                        <div class="certificateButtonContainer">
+                            <a href="certificates/resful-api-cert.pdf" class="courserabtn">Certificate</a>
+                            <h4>Designing RESTful Web APIs<br><span>Shawn Wildermuth, PLURALSIGHT</span></h4>
+                        </div>
+                    </a>
+                </div>
+                    <!--certificate card-->
+                    <div class="testimonialsBox blue">
+                        <a href="https://spark.ngo/">
+                        <div class="imgBx">
+                            <img src="spark.png">
+                        </div>
+                        <p>Modern entrepreneurship and interactive co-teaching methods with international expertise with guest speakrs from the industry. The overall objective is to create the spirit of entrepreneurship in youth to lead social and economic developement by introducing new businesses and products to the local and global markets.</p>
+                        <div class="certificateButtonContainer">
+                            <a href="certificates/SPARKcertificate.jpg" class="courserabtn">Certificate</a>
+                            <h4>Spark & JU Winter Entrepreneurship Course<br><span>Spark, Kingdom of Netherlands</span></h4>
+                        </div>
+                    </a>
+                </div>
+
+</div>
+            </section>
+
+            <!-- contact -->
+            <section class="contact adjust" id ="contact">
+                <div class ="title">
+                    <h2>Contact Me</h2>
+                    <p>Send me a message through the below form, or email directly at <b style="color: black;">hamzazwairy040@gmail.com</b> or <b style="color: black;">alzwerih@msu.edu</b></p>
+                </div>
+
+                <form class="contactForm" action="email-form-handle.php" method="post">
+                    <div class="row">
+                        <input type="text" name="name" placeholder="Name">
+                    </div>
+                    <div class="row">
+                        <input type="text" name="email" placeholder="Email Address">
+                    </div>
+
+                    <div class="row2">
+                        <textarea placeholder="Message", name="message"></textarea>
+                    </div>
+
+                    <div class="row2">
+                        <input name="submit" type="submit" value="Send">
+                    </div>
+                </form>
+            </section>
+
+
+            <!-- copyright text -->
+            <div class="copyright">
+                <p>Copyright © 2022 Hamzeh Alzwairy. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let topbar = document.querySelector('.topbar');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            topbar.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+        function toggleMenu(){
+            let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+        navigation.classList.remove('active');
+        main.classList.remove('active');
+        }
+    </script>
+</body>
+</head>
+</html>
