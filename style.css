@@ -406,16 +406,17 @@ width: 180px;
 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
     margin: 40px 0;
 }
 
-.projects .content .workBx
-{
-position: relative;
-height: 300px;
-width: 100%;
-overflow: hidden;
+.projects .content .workBx {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 5%);
 }
 
 .projects .content .workBx .imgBx
@@ -433,7 +434,7 @@ overflow: hidden;
     height: 100%;
     top: 0;
     left: 0;
-    object-fit: cover;
+    object-fit: fill;
 }
 .projects .content .workBx:hover .imgBx
 {
