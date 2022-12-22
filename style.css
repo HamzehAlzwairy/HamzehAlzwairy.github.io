@@ -338,6 +338,11 @@ p
     min-width: 49%;
 }
 
+.about .content .textBox p
+{
+    color: var(--black)
+}
+
 .about .content .imgBx
 {
 margin-left: 30px;
